@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moses's Birthday</title>
+    <link rel="stylesheet" href="font-moses/css/all.css">
+    <style type="text/css">
+        body{
+            width: 100%;
+            height: 100vh;
+            background-image:  url(pics/Freetown.jpg);
+            position: relative;
+            background-position: top;
+            background-size: cover;
+
+        }
+       .hero{
+        position: relative;
+        padding: 10px;
+        text-align: center;
+       }
+       .hero h1{
+        top:50%;
+        left: 50%;
+        font-family: cursive;
+        position: relative;
+        transform: translate(-50%, -50%);
+        font-size: 120px;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        background-image: linear-gradient(#1e8fa5, goldenrod);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-position: -750px 0;
+        animation: backcolor 5s linear infinite;
+       }
+       @keyframes backcolor {
+        100%{
+            background-position: 0 0;
+        }
+       }
+
+    .hero h1:hover{
+        text-shadow:  0 0 50px goldenrod;
+       
+    }
+
+    .hero h1 span{
+        transition: 0.5s;
+    }
+    
+    .hero h1:hover span:nth-child(1) {
+        margin-right: 10px;
+    
+    } 
+    
+    .hero h1:hover span:nth-child(1):after {
+        content: "'";
+    
+    } 
+    
+    .hero h1:hover span:nth-child(2) {
+        margin-left: 30px;
+    
+    } 
+    .content{
+        padding: 10px;
+        position: relative;
+        text-align: center;
+    }
+    .content img{
+        width: 250px;
+        height: 300px;
+        border: 3px solid goldenrod;
+        border-radius: 40px;
+    }
+    .aud{
+        text-align: center;
+    }
+    @media screen and (max-width:575px){
+        .hero h1{
+            font-size: 30px;
+        }
+        
+        
+    }
+    
+    </style>
+</head>
+<body>
+   <div class="hero">
+    <h1> Moses's<span> <i class="fa fa-birthday-cake" aria-hidden="true"></i> Birthday </span></h1>
+   
+   </div>
+   <div class="content">
+    <img src="pics/moses.JPG" alt="">
+
+   </div>
+   <div class="aud">
+    <audio controls>
+        <source src="pics/will iam - it my birthday.aac" type="audio/mp3">
+    </audio>
+   </div>
+</body>
+</html>
